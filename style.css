@@ -7,11 +7,15 @@ body{
     
     /* genera un fondo tipo césped verde tipo pixelart */
 
-    background-image: url("https://raphael.app/_next/image?url=%2Fapi%2Fproxy-image%2Fde26ab6f-73a6-48da-a257-42c25d0d8682.webp&w=640&q=75");
-    /* background-image: url("https://raphael.app/_next/image?url=%2Fapi%2Fproxy-image%2Fcf1d8500-5d41-4072-80f6-2e6846e83b6f.webp&w=640&q=75"); */
-    /* background-image: url("https://raphael.app/_next/image?url=%2Fapi%2Fproxy-image%2Fa8951c55-cead-481d-898b-7ac093b086f2.webp&w=640&q=75"); */
-    /* background-image: url("https://raphael.app/_next/image?url=%2Fapi%2Fproxy-image%2F5dae8bd1-5256-4139-80f2-003e05e6e99e.webp&w=640&q=75"); */
-    /* background-image: url("https://raphael.app/_next/image?url=%2Fapi%2Fproxy-image%2F6ce9ef0f-4140-417d-b163-6e9a289b828a.webp&w=640&q=75"); */
+    background-image: url("images/pasto3.png");
+
     background-repeat: no-repeat;
-    background-size: 2600px 1300px;
+    background-size: 100% 1000px;
+    text-align: center;
+}
+.casaPrehistorica img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-top: 400px;
 }
