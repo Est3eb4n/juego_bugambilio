@@ -10,12 +10,33 @@ body{
     background-image: url("images/pasto3.png");
 
     background-repeat: no-repeat;
-    background-size: 100% 1000px;
+    background-size: 100% 100vh;
     text-align: center;
 }
 .casaPrehistorica img{
     width: 100px;
     height: 100px;
     display: inline-block;
-    margin-top: 400px;
+    margin-top: 40vh;
+}
+
+.bosque, .cantera, .mercado img{
+    width: 150px;
+    height: 150px;
+}
+.cantera{
+    display: inline-flex;
+    position: relative;
+    top: 80px;
+}
+.bosque{
+    display: inline-flex;
+    position: relative;
+    top: 300px;
+}
+.mercado{
+    display: inline-flex;
+    position: relative;
+    left: 100px;
+    bottom: 120px; 
 }
