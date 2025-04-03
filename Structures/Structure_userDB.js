@@ -46,21 +46,22 @@ db.createCollection('user',{
                 comida:{
                     bsonType:"string",
                     minimum: 0,
-                    maximum: 500
                 },
                 piedra:{
                     bsonType:"string",
                     minimum: 0,
-                    maximum: 500
                 },
                 madera:{
                     bsonType:"string",
                     minimum: 0,
-                    maximum: 500
                 },
                 edad0:{
-                    bsonType:"string",
-                    enum:["canasta","pesca","pico de piedra","azada de piedra","hacha de piedra"]
+                    bsonType:"array",
+                    items:{
+                        bsonType:"string",
+                        uniqueItems: true,
+                        enum:["canasta","pesca","pico de piedra","azada de piedra","hacha de piedra"]
+                    }
                 }
             }
         }

@@ -1,6 +1,6 @@
 // Estructura de datos de recursos
 
-[
+db.skills.insertMany([
     {
         name:"comida",
         tiempoRecoleccion:1, 
@@ -16,6 +16,12 @@
         tiempoRecoleccion: 1,
         cantidadRecoleccion: 2,
     },
+    {
+        name:"mineral de cobre",
+        tiempoRecoleccion: 1,
+        cantidadRecoleccion: 2,
+    },
+    
     {
         name:"tablones de madera",
         coste:{
@@ -299,4 +305,35 @@
                     }
                 ]
     },
-]
+])
+
+db.createCollection('skills',{
+    validator:{
+        $jsonSchema:{
+            bsonType:'object',
+            required:["userName","password"],
+            properties:{
+                comida:{
+                    bsonType:"string",
+                    minimum: 0,
+                },
+                piedra:{
+                    bsonType:"string",
+                    minimum: 0,
+                },
+                madera:{
+                    bsonType:"string",
+                    minimum: 0,
+                },
+                edad0:{
+                    bsonType:"array",
+                    items:{
+                        bsonType:"string",
+                        uniqueItems: true,
+                        enum:["canasta","pesca","pico de piedra","azada de piedra","hacha de piedra"]
+                    }
+                }
+            }
+        }
+    }
+})
